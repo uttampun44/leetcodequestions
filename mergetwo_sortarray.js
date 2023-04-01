@@ -15,9 +15,6 @@ function mergetwosortArray(){
     let j = n -1;
      k = nums1.length -1;
      
-     
-console.log(i, j)
-     console.log(k)
      while(j >= 0){
         if(i >= 0 && nums1[i] >= nums2[j]){
             nums1[k] = nums1[i];
@@ -28,8 +25,39 @@ console.log(i, j)
             k--
             j--
         }
-        console.log(nums2)
+        console.log(nums1)
      }
 
 }
 mergetwosortArray()
+
+// output [1,2,2,3,5,6]
+
+function second(){
+    
+let nums1 = [1,2,3];
+let nums2 = [2,5,6,0,0,0];
+let m =3;
+let n = 3;
+let k;
+
+ let i = m-1;
+ let j = m-1;
+ k  = nums2.length-1;
+
+ while(i > 0){
+
+    if(j > 0 && nums1[i] < nums2[j]){
+         nums2[k] = nums2[j];
+         k--;
+         j--;
+    }else{
+        nums2[k] = nums2[i];
+        k--;
+        i--;
+    }
+   console.log(nums2)
+ }
+
+}
+second()
