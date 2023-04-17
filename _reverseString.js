@@ -42,3 +42,15 @@ function reverseSecond(){
 }
 let result = reverseSecond()
 console.log(result)
+
+
+
+
+// reverse string with stack
+
+// covert string into array
+
+let vows = "hello";
+let seeVows = vows.split("");
+
+console.log(seeVows)
